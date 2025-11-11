@@ -24,7 +24,49 @@ public class F14_TrianguloPascal {
 
         previous = current;
     }
-}
+    }
+
+    public static void g1_F14_PascalWhile(int N){
+    int[] previous = new int[N];
+
+    int i = 0;
+    while (i < N) {
+
+        int[] current = new int[i + 1];
+
+        // ----- construir la fila i -----
+        int j = 0;
+        while (j <= i) {
+            if (j == 0 || j == i) {
+                current[j] = 1;
+            } else {
+                current[j] = previous[j - 1] + previous[j];
+            }
+            j++;
+        }
+
+        // ----- imprimir espacios de centrado -----
+        int s = 0;
+        while (s < (N - i)) {
+            System.out.print(" ");
+            s++;
+        }
+
+        // ----- imprimir valores de la fila actual -----
+        j = 0;
+        while (j < current.length) {
+            System.out.print(current[j] + " ");
+            j++;
+        }
+
+        System.out.println();
+
+        previous = current;   // pasar fila actual a "previous"
+        i++;
+    }
+    }
+
+
     public static void g1_F14_PascalDoWhile(int N){
     int[] previous = new int[N];
     int i = 0;
@@ -56,30 +98,7 @@ public class F14_TrianguloPascal {
         i++;
 
     } while (i < N);
-}
-    public static void g1_F14_PascalSwitch(int N){
-    int[] previous = new int[N];
-
-    for (int i = 0; i < N; i++){
-        int[] current = new int[i + 1];
-
-        for (int j = 0; j <= i; j++){
-            switch (j == 0 || j == i ? 1 : 2){
-                case 1 -> current[j] = 1;
-                case 2 -> current[j] = previous[j-1] + previous[j];
-            }
-        }
-
-        int s = 0;
-        while (s++ < (N - i)) System.out.print(" ");
-
-        for (int j = 0; j < current.length; j++){
-            System.out.print(current[j] + " ");
-        }
-        
-        System.out.println();
-        previous = current;
     }
-}
+
 
 }
