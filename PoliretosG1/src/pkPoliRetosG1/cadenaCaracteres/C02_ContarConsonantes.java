@@ -37,6 +37,10 @@ public class C02_ContarConsonantes {
         int contador = 0;
         frase = frase.toLowerCase();
         int i = 0;
+        if (frase.isEmpty()) {
+            System.out.println("Frase vacía, no hay consonantes.");
+            return;
+        }
         do {
             char caracter = frase.charAt(i);
             if ((caracter >= 'a' && caracter <= 'z') && !(caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u')){

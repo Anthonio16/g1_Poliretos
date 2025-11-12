@@ -20,7 +20,7 @@ public class C03_EliminarVocal {
             }
         }
         System.out.println("Frase original: " + frase);
-        System.out.println("Frase sin vocales: " + nuevaFrase);
+        System.out.println("Frase sin la vocal: " + nuevaFrase);
     }
 
     //While
@@ -43,7 +43,7 @@ public class C03_EliminarVocal {
             i++;
         }
         System.out.println("Frase original: " + frase);
-        System.out.println("Frase sin vocales: " + nuevaFrase);
+        System.out.println("Frase sin la vocal: " + nuevaFrase);
     }
 
     //Do While
@@ -65,7 +65,7 @@ public class C03_EliminarVocal {
             i++;
         } while (i < frase.length());
         System.out.println("Frase original: " + frase);
-        System.out.println("Frase sin vocales: " + nuevaFrase);
+        System.out.println("Frase sin la vocal: " + nuevaFrase);
     }
     
 }

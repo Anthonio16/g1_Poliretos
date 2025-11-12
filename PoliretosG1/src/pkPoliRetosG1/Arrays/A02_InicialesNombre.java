@@ -2,10 +2,10 @@ package pkPoliRetosG1.Arrays;
 import java.util.Scanner;
 
 public class A02_InicialesNombre {
+    private static final Scanner sc = new Scanner(System.in);
 
     //For
     public static void g1_A02_inicialesNombreFor() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre y apellido: ");
         String[] partes = sc.nextLine().split(" ");
         char inicial1 = Character.toUpperCase(partes[0].charAt(0));
@@ -13,9 +13,10 @@ public class A02_InicialesNombre {
 
         System.out.print("Ingrese el tamaño (mínimo 5): ");
         int n = sc.nextInt();
+        sc.nextLine(); 
         System.out.print("Ingrese el carácter: ");
         char c = sc.next().charAt(0);
-
+        sc.nextLine();
         System.out.println("\nResultado con FOR:\n");
         dibujarLetra(inicial1, n, c);
         System.out.println();
@@ -24,7 +25,6 @@ public class A02_InicialesNombre {
 
     //While
     public static void g1_A02_inicialesNombreWhile() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre y apellido: ");
         String[] partes = sc.nextLine().split(" ");
         char inicial1 = Character.toUpperCase(partes[0].charAt(0));
@@ -32,9 +32,10 @@ public class A02_InicialesNombre {
 
         System.out.print("Ingrese el tamaño (mínimo 5): ");
         int n = sc.nextInt();
+        sc.nextLine();
         System.out.print("Ingrese el carácter: ");
         char c = sc.next().charAt(0);
-
+        sc.nextLine();
         System.out.println("\nResultado con WHILE:\n");
         dibujarLetra(inicial1, n, c);
         System.out.println();
@@ -43,7 +44,6 @@ public class A02_InicialesNombre {
 
     //Do While
     public static void g1_A02_inicialesNombreDoWhile() {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre y apellido: ");
         String[] partes = sc.nextLine().split(" ");
         char inicial1 = Character.toUpperCase(partes[0].charAt(0));
@@ -51,9 +51,10 @@ public class A02_InicialesNombre {
 
         System.out.print("Ingrese el tamaño (mínimo 5): ");
         int n = sc.nextInt();
+        sc.nextLine();
         System.out.print("Ingrese el carácter: ");
         char c = sc.next().charAt(0);
-
+        sc.nextLine();
         System.out.println("\nResultado con DO WHILE:\n");
         dibujarLetra(inicial1, n, c);
         System.out.println();

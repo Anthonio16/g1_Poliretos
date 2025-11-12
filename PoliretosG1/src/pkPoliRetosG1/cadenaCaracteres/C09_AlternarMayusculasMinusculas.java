@@ -53,7 +53,10 @@ public class C09_AlternarMayusculasMinusculas {
         String nuevaFrase = "";
         boolean mayuscula = true;
         int i = 0;
-
+        if (frase.isEmpty()) {
+            System.out.println("Frase vacía, nada que procesar.");
+            return;
+        }
         do {
             char caracter = frase.charAt(i);
             if (Character.isLetter(caracter)){

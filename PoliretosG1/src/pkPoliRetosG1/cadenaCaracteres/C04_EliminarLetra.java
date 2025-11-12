@@ -43,6 +43,10 @@ public class C04_EliminarLetra {
         letra = Character.toLowerCase(letra);
 
         int i = 0;
+        if (frase.isEmpty()) {
+            System.out.println("Frase vacía, nada que eliminar.");
+            return;
+        }
         do {
             char caracter = frase.charAt(i);
             if (caracter != letra){

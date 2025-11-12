@@ -10,10 +10,10 @@ public class C08_Anagramas {
         {"amor", "roma"},
         {"gato", "toga"}
     };
+    private static final Scanner sc = new Scanner(System.in);
 
     //For
     public static void g1_C08_AnagramasFor(){
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("Anagramas (for)");
         for (int i = 0; i < CONJUNTO.length; i++){
@@ -24,7 +24,7 @@ public class C08_Anagramas {
             System.out.println("\nPalabra: " + palabra);
 
             for (int j = 0; j < 3; j++){
-                System.out.print("Intento " + j + ": Ingrese el anagrama:");               
+                System.out.print("Intento " + (j+1) + ": Ingrese el anagrama:");               
                 String respuesta = sc.nextLine().toLowerCase();
 
                 if (respuesta.equalsIgnoreCase(anagramaCorrecto)){
@@ -43,7 +43,6 @@ public class C08_Anagramas {
 
     //While
     public static void g1_C08_AnagramasWhile(){
-        Scanner sc = new Scanner(System.in);
         
         System.out.println("Anagramas (while)");
         int i = 0;
@@ -56,7 +55,7 @@ public class C08_Anagramas {
 
             int j = 0;
             while (j < 3){
-                System.out.print("Intento " + j + ": Ingrese el anagrama:");
+                System.out.print("Intento " + (j+1) + ": Ingrese el anagrama:");
                 String respuesta = sc.nextLine().toLowerCase();
 
                 if (respuesta.equalsIgnoreCase(anagramaCorrecto)){
@@ -77,7 +76,6 @@ public class C08_Anagramas {
 
     //Do While
     public static void g1_C08_AnagramasDoWhile(){
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("Anagramas (do while)");
         int i = 0;
@@ -90,7 +88,7 @@ public class C08_Anagramas {
 
             int j = 0;
             do {
-                System.out.print("Intento " + j + ": Ingrese el anagrama:");
+                System.out.print("Intento " + (j+1) + ": Ingrese el anagrama:");
                 String respuesta = sc.nextLine().toLowerCase();
 
                 if (respuesta.equalsIgnoreCase(anagramaCorrecto)){
@@ -107,6 +105,6 @@ public class C08_Anagramas {
             }
             i++;
         } while (i < CONJUNTO.length);
-    }   
+    }
     
 }

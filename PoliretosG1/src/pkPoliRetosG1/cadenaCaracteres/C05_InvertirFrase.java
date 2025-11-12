@@ -21,6 +21,10 @@ public class C05_InvertirFrase {
     public static void g1_C05_InvertirFraseWhile(String frase){
         String fraseInvertida = "";
         int i = frase.length() - 1;
+        if (frase.isEmpty()) {
+            System.out.println("Frase vacía, nada que invertir.");
+            return;
+        }
         while (i >= 0){
             char c = frase.charAt(i);
             if (esVocal(c)){
@@ -38,6 +42,10 @@ public class C05_InvertirFrase {
     public static void g1_C05_InvertirFraseDoWhile(String frase){
         String fraseInvertida = "";
         int i = frase.length() - 1;
+        if (frase.isEmpty()) {
+            System.out.println("Frase vacía, nada que invertir.");
+            return;
+        }
         do {
             char c = frase.charAt(i);
             if (esVocal(c)){

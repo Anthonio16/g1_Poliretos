@@ -15,6 +15,7 @@ import java.util.Scanner;
 import pkPoliRetosG1.serieFiguras.Figuras;
 import pkPoliRetosG1.Arrays.Array;
 import pkPoliRetosG1.Loadings.Loading;
+import pkPoliRetosG1.cadenaCaracteres.CadenaCaracteres;
 
 
 
@@ -63,7 +64,7 @@ public class Controller {
         Figuras.inicializarFiguras();
 
         //Cadena de caracteres
-
+        CadenaCaracteres.inicializarCadenasCaracteres();
 
         //Arrays
         Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);

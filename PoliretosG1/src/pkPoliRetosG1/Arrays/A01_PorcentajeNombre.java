@@ -2,15 +2,16 @@ package pkPoliRetosG1.Arrays;
 import java.util.Scanner;
 
 public class A01_PorcentajeNombre {
+    private static final Scanner sc = new Scanner(System.in);
 
+  
     //For
     public static void g1_A01_porcentajeNombreFor(){
-        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
         String nombreCompleto = sc.nextLine();
         String[] palabras = nombreCompleto.split(" ");
 
-        System.out.println("Ingrese los porcentajes de carga separados por espacio (4 cantidades):");
+        System.out.println("Ingrese los porcentajes de carga separados por espacio:");
         String[] porcentajesTexto = sc.nextLine().split(" ");
         int[] porcentajes = new int[porcentajesTexto.length];
         for (int i = 0; i < porcentajesTexto.length; i++) {
@@ -27,12 +28,11 @@ public class A01_PorcentajeNombre {
     
     //While
     public static void g1_A01_porcentajeNombreWhile(){
-        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
         String nombreCompleto = sc.nextLine();
         String[] palabras = nombreCompleto.split(" ");
 
-        System.out.println("Ingrese los porcentajes de carga separados por espacio (4 cantidades):");
+        System.out.println("Ingrese los porcentajes de carga separados por espacio:");
         String[] porcentajesTexto = sc.nextLine().split(" ");
         int[] porcentajes = new int[porcentajesTexto.length];
         int i = 0;
@@ -54,12 +54,11 @@ public class A01_PorcentajeNombre {
 
     //Do While
     public static void g1_A01_porcentajeNombreDoWhile(){
-        Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
         String nombreCompleto = sc.nextLine();
         String[] palabras = nombreCompleto.split(" ");
 
-        System.out.println("Ingrese los porcentajes de carga separados por espacio (4 cantidades):");
+        System.out.println("Ingrese los porcentajes de carga separados por espacio:");
         String[] porcentajesTexto = sc.nextLine().split(" ");
         int[] porcentajes = new int[porcentajesTexto.length];
         int i = 0;
@@ -92,12 +91,10 @@ public class A01_PorcentajeNombre {
             }
         }
         barra.append(">]");
-        int letraMostrar = Math.max(2, (porcentaje * palabra.length()) / 100);
-        if (letraMostrar > palabra.length()) {
-            letraMostrar = palabra.length();
-        } 
-        String subPalabra = palabra.substring(0, letraMostrar);
 
+        int letrasMostrar = (porcentaje * palabra.length()) / 100;
+        letrasMostrar = Math.max(2, Math.min(letrasMostrar, palabra.length()));
+        String subPalabra = palabra.substring(0, letrasMostrar);
         System.out.printf("%s %3d%% %s%n", barra.toString(), porcentaje, subPalabra);
     }
 

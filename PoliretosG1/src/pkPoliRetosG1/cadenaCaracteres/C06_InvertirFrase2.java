@@ -16,7 +16,7 @@ public class C06_InvertirFrase2 {
             }
         }    
         System.out.println("Frase original: " + frase);
-        System.out.println("Frase invertida con consonates en mayúsculas: " + fraseInvertida);
+        System.out.println("Frase invertida con consonantes en mayúsculas: " + fraseInvertida);
     }
     
     //While
