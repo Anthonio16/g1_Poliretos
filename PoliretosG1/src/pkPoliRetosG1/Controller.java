@@ -8,6 +8,7 @@ import pkPoliRetosG1.Arrays.Array;
 import pkPoliRetosG1.Loadings.Loading;
 import pkPoliRetosG1.secuenciasNumericas.Secuencias;
 import pkPoliRetosG1.SeriesCaracteres.Caracteres;
+import pkPoliRetosG1.cadenaCaracteres.CadenaCaracteres;
 
 public class Controller {
 
@@ -38,6 +39,7 @@ public class Controller {
 
         //Cadena de caracteres
 
+        CadenaCaracteres.inicializarCadenasCaracteres();
 
         //Arrays
         Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);
