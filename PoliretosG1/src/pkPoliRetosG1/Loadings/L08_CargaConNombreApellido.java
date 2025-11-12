@@ -2,7 +2,7 @@ package pkPoliRetosG1.Loadings;
 
 public class L08_CargaConNombreApellido {
 
-    public void g1_L08realizarCargaConNombreyApellidoCompletoFor (String nombre1, String apellido1, String apellido2) throws InterruptedException{
+    public static void g1_L08realizarCargaConNombreyApellidoCompletoFor (String nombre1, String apellido1, String apellido2) throws InterruptedException{
         String nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
 
         double tamanio1 = nombreCompleto.length();
@@ -27,13 +27,13 @@ public class L08_CargaConNombreApellido {
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.println("[" + barraString + "]" + porcentaje + "%" );
+            System.out.print("\r[" + barraString + "]" + porcentaje + "%" );
             Thread.sleep(100);
         }
         System.out.println("Carga Completa.");
     }
 
-    public void g1_L08realizarCargaConNombreyApellidoCompletoWhile (String nombre1, String apellido1, String apellido2) throws InterruptedException{
+    public static void g1_L08realizarCargaConNombreyApellidoCompletoWhile (String nombre1, String apellido1, String apellido2) throws InterruptedException{
         String nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
 
         double tamanio1 = nombreCompleto.length();
@@ -60,14 +60,14 @@ public class L08_CargaConNombreApellido {
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.println("[" + barraString + "]" + k1 + "%" );
+            System.out.print("\r[" + barraString + "]" + k1 + "%" );
             Thread.sleep(100);
             k1+=porcentajePorCaracter;
         }
         System.out.println("Carga Completa.");
     }
 
-    public void g1_L08realizarCargaConNombreyApellidoCompletoDoWhile (String nombre1, String apellido1, String apellido2) throws InterruptedException{
+    public static void g1_L08realizarCargaConNombreyApellidoCompletoDoWhile (String nombre1, String apellido1, String apellido2) throws InterruptedException{
         String nombreCompleto = nombre1 + " " + apellido1 + " " + apellido2;
 
         double tamanio1 = nombreCompleto.length();
@@ -93,7 +93,7 @@ public class L08_CargaConNombreApellido {
             }
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraString = new String(barra);
-            System.out.println("[" + barraString + "]" + w + "%" );
+            System.out.print("\r[" + barraString + "]" + w + "%" );
             Thread.sleep(100);
             w+= porcentajePorCaracter;
         } while (w <= 100);

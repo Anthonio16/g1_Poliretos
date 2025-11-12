@@ -1,8 +1,8 @@
 package pkPoliRetosG1.Loadings;
 
-public class L02CargaConCaracter {
+public class L02_CargaConCaracter {
 
-    public void g1_L02pedirCaracterYSimularCargaFor(char caracter) throws InterruptedException{
+    public static void g1_L02pedirCaracterYSimularCargaFor(char caracter) throws InterruptedException{
 
 
         //Usando for:
@@ -17,7 +17,7 @@ public class L02CargaConCaracter {
 
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + porcentaje + " %");
+            System.out.print("\r[" + barraEnString + " ]" + porcentaje + " %");
             Thread.sleep(100);
         }
         System.out.println("Carga Completa.");
@@ -25,7 +25,7 @@ public class L02CargaConCaracter {
     }
 
 
-    public void g1_L02pedirCaracterYSimularCargaWhile(char caracter) throws InterruptedException{
+    public static void g1_L02pedirCaracterYSimularCargaWhile(char caracter) throws InterruptedException{
 
 
         //Usando while:
@@ -40,14 +40,14 @@ public class L02CargaConCaracter {
 
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + k + " %");
+            System.out.print("\r[" + barraEnString + " ]" + k + " %");
             Thread.sleep(100);
             k++;
         }
         System.out.println("Carga Completa.");
     }
 
-    public void g1_L02pedirCaracterYSimularCargaDoWhile(char caracter) throws InterruptedException{
+    public static void g1_L02pedirCaracterYSimularCargaDoWhile(char caracter) throws InterruptedException{
 
         //Usando do-while:
         System.out.println("3. DO-WHILE: ");
@@ -61,7 +61,7 @@ public class L02CargaConCaracter {
 
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + w + " %");
+            System.out.print("\r[" + barraEnString + " ]" + w + " %");
             Thread.sleep(100);
             w++;
         }while (w <= 100);

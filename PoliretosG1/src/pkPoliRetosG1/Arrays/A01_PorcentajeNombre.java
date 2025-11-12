@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class A01_PorcentajeNombre {
 
     //For
-    public void g1_A01_porcentajeNombreFor(){
+    public static void g1_A01_porcentajeNombreFor(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
         String nombreCompleto = sc.nextLine();
@@ -26,7 +26,7 @@ public class A01_PorcentajeNombre {
     }
     
     //While
-    public void g1_A01_porcentajeNombreWhile(){
+    public static void g1_A01_porcentajeNombreWhile(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
         String nombreCompleto = sc.nextLine();
@@ -53,7 +53,7 @@ public class A01_PorcentajeNombre {
     }
 
     //Do While
-    public void g1_A01_porcentajeNombreDoWhile(){
+    public static void g1_A01_porcentajeNombreDoWhile(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre completo (palabras separadas por espacio): ");
         String nombreCompleto = sc.nextLine();
@@ -79,7 +79,7 @@ public class A01_PorcentajeNombre {
         } while (i < palabras.length);
     }
 
-    private void imprimirBarra(String palabra, int porcentaje) {
+    private static void imprimirBarra(String palabra, int porcentaje) {
         int longitudBarra = 15;
         int llenado = (porcentaje * longitudBarra) / 100;
 

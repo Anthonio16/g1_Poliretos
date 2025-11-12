@@ -1,8 +1,8 @@
 package pkPoliRetosG1.Loadings;
 
-public class L05CargaCambiandoLaPunta {
+public class L05_CargaCambiandoLaPunta {
 
-    public void g1_L05avanzarBarraCambiandoPuntaFor() throws InterruptedException{
+    public static void g1_L05avanzarBarraCambiandoPuntaFor() throws InterruptedException{
         //Usando for:
         System.out.println("1. FOR: ");
         char[] barra = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}; //20 Caracteres
@@ -25,14 +25,14 @@ public class L05CargaCambiandoLaPunta {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + porcentaje + " %");
+            System.out.print("\r[" + barraEnString + " ]" + porcentaje + " %");
             Thread.sleep(100);
         }
         System.out.println("Carga Completa.");
 
     }
 
-    public void g1_L05avanzarBarraCambiandoPuntaWhile() throws InterruptedException{
+    public static void g1_L05avanzarBarraCambiandoPuntaWhile() throws InterruptedException{
         //Usando while:
         System.out.println("2. WHILE: ");
         char[] barra = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}; //20 Caracteres
@@ -56,7 +56,7 @@ public class L05CargaCambiandoLaPunta {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + k + " %");
+            System.out.print("\r[" + barraEnString + " ]" + k + " %");
             Thread.sleep(100);
             k++;
         }
@@ -64,7 +64,7 @@ public class L05CargaCambiandoLaPunta {
 
     }
 
-    public void g1_L05avanzarBarraCambiandoPuntaDoWhile() throws InterruptedException{
+    public static void g1_L05avanzarBarraCambiandoPuntaDoWhile() throws InterruptedException{
 
 
         //Usando do-while:
@@ -90,7 +90,7 @@ public class L05CargaCambiandoLaPunta {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + w + " %");
+            System.out.print("\r[" + barraEnString + " ]" + w + " %");
             Thread.sleep(100);
             w++;
         }while (w <= 100);

@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class A02_InicialesNombre {
 
     //For
-    public void g1_A02_inicialesNombreFor() {
+    public static void g1_A02_inicialesNombreFor() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre y apellido: ");
         String[] partes = sc.nextLine().split(" ");
@@ -23,7 +23,7 @@ public class A02_InicialesNombre {
     }
 
     //While
-    public void g1_A02_inicialesNombreWhile() {
+    public static void g1_A02_inicialesNombreWhile() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre y apellido: ");
         String[] partes = sc.nextLine().split(" ");
@@ -42,7 +42,7 @@ public class A02_InicialesNombre {
     }
 
     //Do While
-    public void g1_A02_inicialesNombreDoWhile() {
+    public static void g1_A02_inicialesNombreDoWhile() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese su nombre y apellido: ");
         String[] partes = sc.nextLine().split(" ");
@@ -60,7 +60,7 @@ public class A02_InicialesNombre {
         dibujarLetra(inicial2, n, c);
     }
     
-    private void dibujarLetra(char letra, int n, char c) {
+    private static void dibujarLetra(char letra, int n, char c) {
         switch (letra) {
             case 'A': dibujarA(n, c); break;
             case 'M': dibujarM(n, c); break;
@@ -72,7 +72,7 @@ public class A02_InicialesNombre {
         }
     }
 
-    private void dibujarP(int n, char c) {
+    private static void dibujarP(int n, char c) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (j == 0 || i == 0 || (i < n / 2 && j == n - 1) || (i == n / 2 && j < n - 1))
@@ -84,7 +84,7 @@ public class A02_InicialesNombre {
         }
     }
 
-    private void dibujarA(int n, char c) {
+    private static void dibujarA(int n, char c) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if ((j == 0 || j == n - 1) && i != 0 || (i == 0 || i == n / 2) && j > 0 && j < n - 1)
@@ -96,7 +96,7 @@ public class A02_InicialesNombre {
         }
     }
 
-    private void dibujarM(int n, char c) {
+    private static void dibujarM(int n, char c) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (j == 0 || j == n - 1 || (i == j && i <= n / 2) || (i + j == n - 1 && i <= n / 2))
@@ -108,7 +108,7 @@ public class A02_InicialesNombre {
         }
     }  
 
-    private void dibujarT(int n, char c) {
+    private static void dibujarT(int n, char c) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i == 0 || j == n / 2)
@@ -120,7 +120,7 @@ public class A02_InicialesNombre {
         }
     }
 
-    private void dibujarL(int n, char c) {
+    private static void dibujarL(int n, char c) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (j == 0 || i == n - 1)

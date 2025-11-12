@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class A05_MatrizAleatoriaNombre {
 
-    public void g1_A05generarMatrizConNombreAleatorioFor(String nombre1, String nombre2, String apellido1, String apellido2) throws InterruptedException{
+    public static void g1_A05generarMatrizConNombreAleatorioFor(String nombre1, String nombre2, String apellido1, String apellido2) throws InterruptedException{
         
         String nombreCompleto = nombre1 + nombre2 + apellido1 + apellido2;
 
@@ -41,7 +41,7 @@ public class A05_MatrizAleatoriaNombre {
         imprimirMatricesChar(matrizCaracteresAleatorios);
     }
 
-    public void g1_A05generarMatrizConNombreAleatorioWhile(String nombre1, String nombre2, String apellido1, String apellido2) throws InterruptedException{
+    public static void g1_A05generarMatrizConNombreAleatorioWhile(String nombre1, String nombre2, String apellido1, String apellido2) throws InterruptedException{
         
         String nombreCompleto = nombre1 + nombre2 + apellido1 + apellido2;
 
@@ -77,7 +77,7 @@ public class A05_MatrizAleatoriaNombre {
         imprimirMatricesChar(matrizCaracteresAleatorios);
     }
 
-    public void g1_A05generarMatrizConNombreAleatorioDoWhile(String nombre1, String nombre2, String apellido1, String apellido2) throws InterruptedException{
+    public static void g1_A05generarMatrizConNombreAleatorioDoWhile(String nombre1, String nombre2, String apellido1, String apellido2) throws InterruptedException{
         
         String nombreCompleto = nombre1 + nombre2 + apellido1 + apellido2;
 
@@ -113,7 +113,7 @@ public class A05_MatrizAleatoriaNombre {
         imprimirMatricesChar(matrizCaracteresAleatorios);
     }
 
-    public void imprimirMatricesChar(char[][] matriz){
+    public static void imprimirMatricesChar(char[][] matriz){
          for (int i = 0; i < matriz.length; i++){
             for (int j = 0; j < matriz[0].length; j++){
                 System.out.print(" " + matriz[i][j] + " ");

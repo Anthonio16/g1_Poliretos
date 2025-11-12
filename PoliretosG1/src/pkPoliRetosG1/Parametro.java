@@ -1,14 +1,17 @@
 package pkPoliRetosG1;
 
-public class Persona {
+public class Parametro {
     
     private String primerNombre;
     private String segundoNombre;
     private String primerApellido;
     private String segundoApellido;
+    private int numeroDeTermino;
+    private int numeroDeNivelOTamanio;
+    private String frase;
 
     
-    public Persona(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido) {
+    public Parametro(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido) {
         setPrimerNombre(primerNombre);
         setSegundoNombre(segundoNombre);
         setPrimerApellido(primerApellido);
@@ -54,5 +57,6 @@ public class Persona {
     public void setSegundoApellido(String segundoApellido) {
         this.segundoApellido = segundoApellido;
     }
+
 
 }

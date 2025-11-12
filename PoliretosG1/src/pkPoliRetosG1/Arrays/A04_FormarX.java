@@ -2,7 +2,7 @@ package pkPoliRetosG1.Arrays;
 
 public class A04_FormarX {
 
-    public void g1_A04formarXConNombreyApellidoFor(String nombre1, String apellido1){
+    public static void g1_A04formarXConNombreyApellidoFor(String nombre1, String apellido1){
 
         int tamanio = (nombre1.length()>apellido1.length())? nombre1.length() : apellido1.length();
 
@@ -24,7 +24,7 @@ public class A04_FormarX {
         imprimirMatricesChar(nombreXApellido);
     }
 
-    public void g1_A04formarXConNombreyApellidoWhile(String nombre1, String apellido1){
+    public static void g1_A04formarXConNombreyApellidoWhile(String nombre1, String apellido1){
 
         int tamanio = (nombre1.length()>apellido1.length())? nombre1.length() : apellido1.length();
 
@@ -50,7 +50,7 @@ public class A04_FormarX {
         imprimirMatricesChar(nombreXApellido);
     }
 
-    public void g1_A04formarXConNombreyApellidoDoWhile(String nombre1, String apellido1){
+    public static void g1_A04formarXConNombreyApellidoDoWhile(String nombre1, String apellido1){
 
         int tamanio = (nombre1.length()>apellido1.length())? nombre1.length() : apellido1.length();
 
@@ -78,7 +78,7 @@ public class A04_FormarX {
         imprimirMatricesChar(nombreXApellido);
     }
 
-    public void imprimirMatricesChar(char[][] matriz){
+    public static void imprimirMatricesChar(char[][] matriz){
          for (int i = 0; i < matriz.length; i++){
             for (int j = 0; j < matriz[0].length; j++){
                 System.out.print(" " + matriz[i][j] + " ");

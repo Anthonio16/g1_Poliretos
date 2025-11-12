@@ -2,7 +2,7 @@ package pkPoliRetosG1.Arrays;
 
 public class A03_DibujarPlanoYFuncion {
 
-    public void g1_A03dibujarPlanoYFuncionDibujandoConNombreFor(String nombre1){
+    public static void g1_A03dibujarPlanoYFuncionDibujandoConNombreFor(String nombre1){
         int longitudNombreEnX = nombre1.length();
         int enY = longitudNombreEnX;
 
@@ -56,7 +56,7 @@ public class A03_DibujarPlanoYFuncion {
         imprimirMatricesString(planoDeCoordenadas);
     }
 
-    public void g1_A03dibujarPlanoYFuncionDibujandoConNombreWhile(String nombre1){
+    public static void g1_A03dibujarPlanoYFuncionDibujandoConNombreWhile(String nombre1){
         int longitudNombreEnX = nombre1.length();
         int enY = longitudNombreEnX;
 
@@ -125,7 +125,7 @@ public class A03_DibujarPlanoYFuncion {
         imprimirMatricesString(planoDeCoordenadas);
     }
 
-    public void g1_A03dibujarPlanoYFuncionDibujandoConNombreDoWhile(String nombre1){
+    public static void g1_A03dibujarPlanoYFuncionDibujandoConNombreDoWhile(String nombre1){
         int longitudNombreEnX = nombre1.length();
         int enY = longitudNombreEnX;
 
@@ -196,7 +196,7 @@ public class A03_DibujarPlanoYFuncion {
         imprimirMatricesString(planoDeCoordenadas);
     }
 
-    public void imprimirMatricesString(String[][] matriz){
+    public static void imprimirMatricesString(String[][] matriz){
         for (int i = 0; i < matriz.length; i++){
             for (int j = 0; j < matriz[0].length; j++){
                 System.out.print(matriz[i][j] + " ");

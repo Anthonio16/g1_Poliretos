@@ -2,7 +2,7 @@ package pkPoliRetosG1.Loadings;
 
 public class L07_BarraCambiandoPuntaRotacional {
 
-    public void g1_L07avanzarBarraConPuntaRotacional() throws InterruptedException{
+    public static void g1_L07avanzarBarraConPuntaRotacionalFor() throws InterruptedException{
         //Usando for:
         System.out.println("1. FOR: ");
         char[] barra = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}; //20 Caracteres
@@ -26,13 +26,13 @@ public class L07_BarraCambiandoPuntaRotacional {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + porcentaje + " %");
+            System.out.print("\r[" + barraEnString + " ]" + porcentaje + " %");
             Thread.sleep(100);
         }
         System.out.println("Carga Completa.");
     }
 
-    public void g1_L07avanzarBarraConPuntaRotacionalWhile() throws InterruptedException{
+    public static void g1_L07avanzarBarraConPuntaRotacionalWhile() throws InterruptedException{
         char[] rotacion = {'|', '/', '-', '\\'};
         int pos = 0;
 
@@ -57,14 +57,14 @@ public class L07_BarraCambiandoPuntaRotacional {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + k + " %");
+            System.out.print("\r[" + barraEnString + " ]" + k + " %");
             Thread.sleep(100);
             k++;
         }
         System.out.println("Carga Completa.");
     }
 
-    public void g1_L07avanzarBarraConPuntaRotacionalDoWhile() throws InterruptedException{
+    public static void g1_L07avanzarBarraConPuntaRotacionalDoWhile() throws InterruptedException{
         char[] rotacion = {'|', '/', '-', '\\'};
         int pos = 0;
         
@@ -89,7 +89,7 @@ public class L07_BarraCambiandoPuntaRotacional {
             
             //Para mostrar el arreglo completo, se lo convierte en string
             String barraEnString = new String(barra);
-            System.out.println("[" + barraEnString + " ]" + w + " %");
+            System.out.print("\r[" + barraEnString + " ]" + w + " %");
             Thread.sleep(100);
             w++;
         } while (w <= 100);
