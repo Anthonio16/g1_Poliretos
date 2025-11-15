@@ -94,7 +94,5 @@ public class CadenaCaracteres {
 
             System.out.println(); // Línea en blanco
         } while (opcion != 0);
-
-        sc.close();
     }
 }

@@ -43,7 +43,7 @@ public class Controller {
        CadenaCaracteres.inicializarCadenasCaracteres();
 
         //Arrays
-        Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);
+        //Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);
         
 
         //Loading
