@@ -73,6 +73,15 @@ public class Loading {
         L10_CargaDeArchivo.g1_L10simularDescargaDeArchivoWhile();
         L10_CargaDeArchivo.g1_L10simularDescargaDeArchivoDoWhile();
 
+        System.out.println("------------EJERCICIOS LOGINS (L11)------------");
+        L11_NumeroRandom.generarConFor();
+        L11_NumeroRandom.generarConWhile();
+        L11_NumeroRandom.generarConDoWhile();
+
+        System.out.println("------------EJERCICIOS LOGINS (L12)------------");
+        L12_DesplazarFigura.animarConFor();
+        L12_DesplazarFigura.animarConWhile();
+        L12_DesplazarFigura.animarConDoWhile();
     }
 
 }
