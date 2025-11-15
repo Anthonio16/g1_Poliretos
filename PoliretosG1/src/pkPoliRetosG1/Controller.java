@@ -28,30 +28,29 @@ public class Controller {
         String segundoApellido = sc.nextLine();
 
         //Series numericas
-        Secuencias.inicializarSecuencias();
+        //Secuencias.inicializarSecuencias();
 
         //Series de caracteres
 
-        Caracteres.inicializarSecuenciasCaracteres();
+        //Caracteres.inicializarSecuenciasCaracteres();
 
-        //Figuras
-
-        //5-19
-        Figuras.inicializarFiguras();
+        //Figuras 5-19
+        
+        //Figuras.inicializarFiguras();
 
         //Cadena de caracteres
 
-        CadenaCaracteres.inicializarCadenasCaracteres();
+       // CadenaCaracteres.inicializarCadenasCaracteres();
 
         //Arrays
-        Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);
+        //Array.inicializarArrays(primerNombre, segundoNombre, primerApellido, segundoApellido);
         
 
         //Loading
-        Loading.inicializarLoadings(primerNombre, primerApellido, segundoApellido);
+        //Loading.inicializarLoadings(primerNombre, primerApellido, segundoApellido);
 
         //Recursion
-        Recursividad.inicializarCalculos();
+        //Recursividad.inicializarCalculos();
 
         //Grafos y Automatas
         AutomatasGrafos.inicializarAutomatas();
